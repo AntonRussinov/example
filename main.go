@@ -1,7 +1,6 @@
 package main
 
-//added comment dev
-//one more
+//commit merge
 import (
 	"fmt"
 
