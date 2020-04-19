@@ -2,14 +2,11 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/example/service"
 )
 
 func main() {
-
-	go fmt.Println("1!")
-	go fmt.Println("2!")
-	go fmt.Println("3!")
-	go fmt.Println("42112!")
-
-	fmt.Scanln()
+	result := service.DirReduc([]string{"SOUT", "WEST", "WEST", "EAST", "NORTH", "SOUTH", "SOUTH", "WEST"})
+	fmt.Printf("result of work is %v \n", result)
 }
